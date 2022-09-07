@@ -1,5 +1,7 @@
 # -*- coding = utf-8 -*-
 # -*- coding = utf-8 -*-
+import time
+
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
@@ -19,7 +21,7 @@ def get_mean_std(c):
 
 
 # get zero mean normalized cross correlation of two channels
-def get_zncc(c1, c2):
+def get_ncc(c1, c2):
     mean1, std1 = get_mean_std(c1)
     mean2, std2 = get_mean_std(c2)
     h, w = c1.shape
@@ -44,8 +46,8 @@ def get_best_offset_ssd(c1, c2, r=15, off_x=0, off_y=0):
     return off_x, off_y
 
 
-# get best offset with zncc
-def get_best_offset_zncc(c1, c2, r=15, off_x=0, off_y=0):
+# get best offset with ncc
+def get_best_offset_ncc(c1, c2, r=15, off_x=0, off_y=0):
     max_metric = -float("inf")
     temp_x = off_x
     temp_y = off_y
@@ -54,9 +56,9 @@ def get_best_offset_zncc(c1, c2, r=15, off_x=0, off_y=0):
             ch1 = c1
             ch2 = np.roll(c2, temp_x + i, axis=0)
             ch2 = np.roll(ch2, temp_y + j, axis=1)
-            zncc = get_zncc(ch1, ch2)
-            if zncc > max_metric:
-                max_metric = zncc
+            ncc = get_ncc(ch1, ch2)
+            if ncc > max_metric:
+                max_metric = ncc
                 off_x = temp_x + i
                 off_y = temp_y + j
     return off_x, off_y
@@ -65,8 +67,8 @@ def get_best_offset_zncc(c1, c2, r=15, off_x=0, off_y=0):
 def get_best_offset(ch1, ch2, method, r=15, off_x=0, off_y=0):
     if method == 'ssd':
         return get_best_offset_ssd(ch1, ch2, r, off_x, off_y)
-    elif method == 'zncc':
-        return get_best_offset_zncc(ch1, ch2, r, off_x, off_y)
+    elif method == 'ncc':
+        return get_best_offset_ncc(ch1, ch2, r, off_x, off_y)
 
 
 def get_best_offset_multi_scale(ch1, ch2, method):
@@ -98,10 +100,11 @@ def align(input_image, image_name, method_list):
     B = input_image[0 * height:1 * height, :]
 
     for method in method_list:
-
+        start_time = time.time()
         off_Gx, off_Gy = get_best_offset_multi_scale(R, G, method)
         off_Bx, off_By = get_best_offset_multi_scale(R, B, method)
-
+        print(method + ": " + image_name + " displacement of channel G: ", off_Gx, off_Gy)
+        print(method + ": " + image_name + " displacement of channel B: ", off_Bx, off_By)
         R = R
         G = np.roll(G, off_Gx, axis=0)
         G = np.roll(G, off_Gy, axis=1)
@@ -116,10 +119,12 @@ def align(input_image, image_name, method_list):
 
         new_image_title = method + '_' + image_name + "_multi.png"
         mpimg.imsave(new_image_title, new_image)
+        end_time = time.time()
+        print(method + ": " + image_name + " time = ", end_time - start_time)
 
 
 if __name__ == '__main__':
-    method_list = ['ssd', 'zncc']
+    method_list = ['ssd', 'ncc']
     for filename in image_list:
         image_name = filename
         filename = filename + ".tif"
