@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24b3feb3-4eed-4c61-a5c1-f350a7409da7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/siyu_ren_a4_p1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/siyu_ren_a4_p2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mp5/.ipynb_checkpoints/p2-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mp5/p1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mp5/p2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mp5/part2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mp5/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mp5/depth.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mp5/p2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mp5/siyu_ren_a5.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mp5/siyu_ren_a5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mp5/siyu_ren_a5_p1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mp5/siyu_ren_a5_p2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/ECE549.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/ECE549.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mp4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mp4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp4_part1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp4_part2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/siyu_ren_a4_p2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/siyu_ren_a4_p2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp5/p1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../mp5/p1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp5/p2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../mp5/p2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp5/part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../mp5/part2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp5/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mp5/gray.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +44,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rensy/PycharmProjects/ECE549&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/rensy/PycharmProjects/pythonProject",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="Python tests in test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rensy\PycharmProjects\ECE549\mp5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.code">
+    <configuration name="code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../pythonProject" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../pythonProject/code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ECE549" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../mp5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../mp5/gray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for mp5.gray.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ECE549" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,13 +112,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../mp5/test.py&quot;" />
+      <option name="_new_target" value="&quot;mp5.gray.test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in gray.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="ECE549" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../mp5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../mp5/gray.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test.py" />
+        <item itemvalue="Python.code" />
+        <item itemvalue="Python.gray" />
+        <item itemvalue="Python tests.Python tests for mp5.gray.test" />
+        <item itemvalue="Python tests.Python tests in gray.py" />
       </list>
     </recent_temporary>
   </component>
